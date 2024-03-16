@@ -4,17 +4,25 @@ import React, { useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 // import { Tag } from 'primereact/tag';
 // import { ProductService } from './service/ProductService';
+import Contenue from './Contenue';
+import image from '../../assets/images/banner-images/banner-image-1.jpg';
 
 export default function Carousse() {
     const products = [
         {
-            name:'Categ1'
+            name:'Categ1',
+            description:'Petit description',
+            image:image
         },
         {
-            name:'Categ2'
+            name:'Categ2',
+            description:'Petit description',
+            image:{image}
         },
         {
-            name:'Categ3'
+            name:'Categ3',
+            description:'Petit description',
+            image:{image}
         },
     ] 
     const responsiveOptions = [
@@ -43,13 +51,12 @@ export default function Carousse() {
     useEffect(() => {
         // ProductService.getProductsSmall().then((data) => setProducts(data.slice(0, 9)));
     }, []);
-
+    
     const productTemplate = (product) => {
+        // console.log(product);
         return (
-            <div className="border-1 surface-border border-round m-2 text-center py-5 ">
-                <div className="categorie" style={{'background-color':'green'}}>
-                    {product.name}
-                </div>
+            <div className=" surface-border border-round m-2 text-center py-5 ">
+                <Contenue product={product}/>
             </div>
         );
     };
