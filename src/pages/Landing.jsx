@@ -1,7 +1,6 @@
 import React from 'react';
 // import Step from './component/Steps.jsx';
-import Carousse from './component/Carousse.jsx';
-import Header from './component/NavBar.jsx'; 
+import Header from './component/Header.jsx';
 // import Gallerie from './component/Gallerie.jsx'; 
 // import AnimatedObject from './component/Annimated.jsx';
 // import AnimatedElements from './component/Animation.jsx';
@@ -10,16 +9,19 @@ const Landing = () => {
 
   return (
     <div>
-    <section className="showcase">
-        <header>
-            <Carousse/> 
-        </header>
-        <div class="overlay"></div>
-        <div class="text">
+      <div className="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+        <div className="top-border wow fadeInDown animated" style={{visibility: 'visible', animation: 'fadeInDown'}}></div>
+        <div className="right-border wow fadeInRight animated" style={{visibility: 'visible', animation: 'fadeInRight'}}></div>
+        <div className="bottom-border wow fadeInUp animated" style={{visibility: 'visible', animation: 'fadeInUp'}}></div>
+        <div className="left-border wow fadeInLeft animated" style={{visibility: 'visible', animation: 'fadeInLeft'}}></div>
+      </div>
+    <div id="wrapper">
+        <Header />
+        <div className="overlay"></div>
+        <div className="text">
 
         </div>
-        
-    </section>
+        </div>
     </div>
   );
 };
