@@ -1,0 +1,33 @@
+.blue {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-top: 10px;
+  }
+  .red{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-top: 50px;
+
+  }
+  .green {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-top: 80px;
+
+  }
+  .gray {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-top: 120px;
+
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
